@@ -1,55 +1,85 @@
-# React + TypeScript + Vite
+# 🚀 Lexical Analyzer Code Editor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A powerful code editor built with React, TypeScript, and CodeMirror that provides lexical analysis capabilities for your code. This tool helps developers understand how their code is tokenized and parsed, making it easier to debug and optimize their programs.
 
-Currently, two official plugins are available:
+## 🛠️ Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React** ⚛️ - A JavaScript library for building user interfaces
+- **TypeScript** 📘 - A typed superset of JavaScript that compiles to plain JavaScript
+- **CodeMirror** 📝 - A versatile text editor implemented in JavaScript for the browser
+- **Lexical Analysis** 🔍 - The process of converting a sequence of characters into a sequence of tokens
+- **Tailwind CSS** 🎨 - A utility-first CSS framework for rapid UI development
+- **Vite** ⚡ - Next generation frontend tooling for faster development
+- **ESLint** 🔍 - A static code analysis tool for identifying problematic patterns
+- **Prettier** 💅 - An opinionated code formatter for consistent code style
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Features
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- Syntax highlighting for multiple programming languages
+- Real-time lexical analysis
+- Customizable editor themes
+- Token visualization
+- Multiple language support
+- Export analysis results
+- Custom token definitions
+- Performance metrics
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Getting Started
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
-# Compiler-PBL
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
+- Git
+
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/lexical-analyzer-code-editor.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd lexical-analyzer-code-editor
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+4. Start the development server:
+   ```bash
+   npm start
+   # or
+   yarn start
+   ```
+
+5. (Optional) Run with Docker:
+   ```bash
+   docker-compose up
+   ```
+
+## 🚀 Usage
+
+1. Open the code editor in your browser
+2. Write or paste your code
+3. The lexical analyzer will automatically process your code and display the tokens
+4. View the analysis results in the output panel
+5. Use the toolbar to:
+   - Change language
+   - Select theme
+   - Export results
+   - Share code
+   - View performance metrics
+
+## 🚀 Advanced Features
+
+### Custom Token Definitions
+You can define custom tokens by creating a JSON configuration file:
