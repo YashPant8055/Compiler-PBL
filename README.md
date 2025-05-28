@@ -24,8 +24,7 @@ A powerful code editor built with React, TypeScript, and CodeMirror that provide
 - Export analysis results
 - Custom token definitions
 - Performance metrics
-- Code snippet sharing
-- Collaborative editing
+
 
 ## 🚀 Getting Started
 
@@ -34,7 +33,7 @@ A powerful code editor built with React, TypeScript, and CodeMirror that provide
 - Node.js (v14 or higher)
 - npm or yarn
 - Git
-- Docker (optional)
+
 
 ### Installation
 
