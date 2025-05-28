@@ -34,7 +34,7 @@ A powerful code editor built with React, TypeScript, and CodeMirror that provide
 - Node.js (v14 or higher)
 - npm or yarn
 - Git
-- Docker (optional)
+
 
 ### Installation
 
